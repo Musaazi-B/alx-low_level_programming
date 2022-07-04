@@ -1,25 +1,21 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * program that prints the alphabet in lowercase, followed by a new line.
+ * main - entry point
+ *
+ * Return: always returns 0
 */
-
 int main(void)
 {
-Char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
+Char a;
+for (a = 'a'; a <= 'z'; a++)
 {
-
-	if(ch != 'q' && ch != 'e')
+if (a == 'q' || a == 'e')
 {
- 	       putchar(ch);
+continue;
 }
-
-}
-putchar(10);
-
+putchar(a);
 return (0);
 }
 

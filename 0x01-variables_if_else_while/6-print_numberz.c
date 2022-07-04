@@ -3,19 +3,17 @@
 #include <stdio.h>
 
 /**
- *program that prints all single digit number of base 10 starting form 0, followed
- a new line.
+ * main - main function
+ *
+ * Return: always returns 0
 */
 
 int main(void)
 {
-int ch;
-for (ch = 48; ch <= 57; ch++)
-{
-        putchar(ch);
-}
-
-printf("\n");
+int a = 0;
+for (; a < 10 ; a++)
+putchar(c'0' + a);
+putchar('\n');
 return (0);
 }
 

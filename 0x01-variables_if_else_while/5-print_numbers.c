@@ -1,20 +1,17 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- *progra  that prints all single digit number of base 10 starting form 0, followed
- a new line.
+ * main - main function
+ *
+ * Return: always returns 0
+ *
 */
-
 int main(void)
 {
-int n;
-for (n = 0; n < 10; n++)
-{
-        printf("%d\n", n);
-}
-
+int a = 0;
+for (; a < 10 ; a++)
+printf("%d", a);
+putchar ('\n');
 return (0);
 }
-
