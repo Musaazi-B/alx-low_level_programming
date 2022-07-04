@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - main function
  *
  * Return: always return 0
  *
@@ -11,21 +11,22 @@
 int main(void)
 {
 int n;
-int lastn;
+
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-lastn = n % 10;
-if (lastn > 5)
+printf("last digit of %d is", n);
+if (n > 5)
 {
-printf("Last digit of %d is %d and is greater than 5\n", n, lastn);
+printf("greater than 5");
 }
 else if (lastn == 0)
 {
-printf("Last digit of %d id %d and is 0\n", n, lastn);
+printf("0");
 }
-else
+else (n < 0 && n != 0)
 {
-printf("Last digit of %d is %d is less than 6 and not 0\n", n, lastn");
+printf("Less than 6 not 0");
 }
+printf('\n');
 return (0);
 }
